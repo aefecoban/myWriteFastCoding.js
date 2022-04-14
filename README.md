@@ -11,7 +11,7 @@ My own js library that I use to speed up coding.
 
 **Fetch**
 
-    $().Fetch(url, {},
+    MJSL().Fetch(url, {},
         () => {
             main.innerHTML = "LOADİNG";
         },
@@ -27,19 +27,19 @@ My own js library that I use to speed up coding.
 
 *Örnek 1:*
 
-    $("div").Loop((data) => {
+    MJSL("div").Loop((data) => {
 	    console.log(data);
     });
 
 *Örnek 2:*
 
-    $().Loop((data) => {
+    MJSL().Loop((data) => {
 	    console.log(data);
     }, [1, 2, 3]);
 
 **Click**
 
-    $("div").Click(
+    MJSL("div").Click(
 	    (event, me) => {
 		    me.style = "background-color: red";
 	    }
@@ -47,10 +47,10 @@ My own js library that I use to speed up coding.
 
 **Info**
 
-    console.log($("div").Info());
+    console.log(MJSL("div").Info());
 
 **Remove**
 
-    $("div").Click(() => {
+    MJSL("div").Click(() => {
 	    $("div").Remove();
     });
