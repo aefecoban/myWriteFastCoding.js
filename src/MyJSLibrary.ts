@@ -105,6 +105,12 @@ class MyJSLibrary{
                 let s = element.getAttribute(whichAttr.toString()) ?? "NULL";
                 return s;
             }))];
+        }else{
+            return (this.select.length == 0) ? undefined : 
+            [...(this.select.map(element => {
+                element.setAttribute(whichAttr, newValue);
+                return newValue;
+            }))];
         }
     }
 
