@@ -108,7 +108,7 @@ class MyJSLibrary{
         }else{
             return (this.select.length == 0) ? undefined : 
             [...(this.select.map(element => {
-                element.setAttribute(whichAttr, newValue);
+                element.setAttribute(whichAttr.toString(), newValue.toString());
                 return newValue;
             }))];
         }
