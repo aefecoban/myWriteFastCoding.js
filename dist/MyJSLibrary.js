@@ -107,6 +107,12 @@ var MyJSLibrary = /** @class */ (function () {
                 return s;
             })), true);
         }
+        else {
+            return (this.select.length == 0) ? undefined : __spreadArray([], (this.select.map(function (element) {
+                element.setAttribute(whichAttr.toString(), newValue.toString());
+                return newValue;
+            })), true);
+        }
     };
     MyJSLibrary.prototype.Remove = function () {
         this.select.map(function (element) {
