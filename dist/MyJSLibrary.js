@@ -114,6 +114,13 @@ var MyJSLibrary = /** @class */ (function () {
             })), true);
         }
     };
+    MyJSLibrary.prototype.Rattr = function (whichAttr) {
+        this.select.map(function (element) {
+            if (element.getAttribute(whichAttr.toString()) !== undefined) {
+                element.removeAttribute(whichAttr.toString());
+            }
+        });
+    };
     MyJSLibrary.prototype.Remove = function () {
         this.select.map(function (element) {
             try {
