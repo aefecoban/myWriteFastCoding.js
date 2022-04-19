@@ -114,6 +114,14 @@ class MyJSLibrary{
         }
     }
 
+    Rattr(whichAttr :String){
+        this.select.map((element) => {
+            if(element.getAttribute(whichAttr.toString()) !== undefined){
+                element.removeAttribute(whichAttr.toString());
+            }
+        });
+    }
+
     Remove(){
         this.select.map(element => {
             try{
